@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-calculator
-        image: naresh2603/python-app:v1
+        image: muthusurya
         ports:
         - containerPort: 3000
 ---
