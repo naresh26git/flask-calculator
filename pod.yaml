@@ -16,7 +16,7 @@ spec:
       - name: flask-calculator
         image: naresh2603/python-app:v1
         ports:
-        - containerPort: 5000
+        - containerPort: 3000
 ---
 apiVersion: v1
 kind: Service
@@ -27,6 +27,6 @@ spec:
   selector:
     app: devops
   ports:
-    - port: 5000
-      targetPort: 5000
+    - port: 3000
+      targetPort: 3000
       nodePort: 30008
